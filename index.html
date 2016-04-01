@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="jquery-2.2.2.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css"></link>
+    <title>Random GIF Generator</title>
+  </head>
+  <body>
+    <div id="random">
+      <h1>GIF Generator</h1>
+      <h2>Want a totally random one?</h2>
+      <button id="getGIF">Generate Random!</button>
+    </div>
+    <div id="search">
+      <h2>Want some control?</h2>
+      <form action="index.html" method="post" id="tagSearch">
+        <label for="tagKey">Keyword Search:</label>
+        <input type="text" placeholder="Keyword" name="wordTag" id="tagKey"/>
+        <input type="submit" value="Generate!">
+      </form>
+    </div>
+    <div id="imageHolder"></div>
+
+  </body>
+</html>

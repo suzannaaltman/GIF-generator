@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+  background-color: gray;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  color: 
+}
+
+#random {
+  text-align: center;
+}
+
+#search {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#imageHolder {
+  background-color: white;
+  text-align: center;
+  min-height: 500px;
+  padding-top: 30px;
+}
