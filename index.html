@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="gifGenerator">
   <head>
     <meta charset="utf-8">
-    <script src="jquery-2.2.2.min.js"></script>
+    <script src="angular.min.js"></script>
     <script src="app.js"></script>
     <link rel="stylesheet" href="style.css"></link>
     <title>Random GIF Generator</title>
   </head>
   <body>
-    <div id="random">
+    <div ng-controller="showGif" id="main">
       <h1>GIF Generator</h1>
       <h2>Want a totally random one?</h2>
-      <button id="getGIF">Generate Random!</button>
-    </div>
-    <div id="search">
+      <button ng-click="getGif()" id="getGIF">Generate Random!</button>
       <h2>Want some control?</h2>
-      <form action="index.html" method="post" id="tagSearch">
-        <label for="tagKey">Keyword Search:</label>
-        <input type="text" placeholder="Keyword" name="wordTag" id="tagKey"/>
-        <input type="submit" value="Generate!">
-      </form>
+      <div id="search">
+        Keyword Search:
+        <input type="text" ng-model="keyword" placeholder="Keyword" id="tagKey"/>
+        <button ng-click="searchGif(keyword)">Generate!</button>
+      </div>
+      <hr class="line">
+      <div id="imageHolder">
+        <img ng-src={{gif}} />
+      </div>
     </div>
-    <div id="imageHolder"></div>
-
   </body>
 </html>

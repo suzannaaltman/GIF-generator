@@ -9,10 +9,21 @@ h1 {
 
 h2 {
   text-align: center;
-  color: 
 }
 
-#random {
+button:hover {
+  border: 1px inset gray;
+  border-radius: 7px;
+  height: 20px;
+  background-color: tomato;
+  color: white;
+}
+
+.line {
+  border: 2px double tomato;
+}
+
+#main {
   text-align: center;
 }
 
